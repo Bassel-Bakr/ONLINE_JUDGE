@@ -17,7 +17,7 @@ ll dijkstra(vector<vector<edge>> const& graph, int s, int t) {
     int node;
     tie(time, node) = pq.top(); pq.pop();
 
-    if(node == t) // did we reach the destionation
+    if(node == t) // did we reach the destination
       return time;
 
     for(const edge& e : graph[node]) {
