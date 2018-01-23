@@ -48,7 +48,7 @@ struct sq
 		index.erase(v1);
 		if (x != a[n])
 		{
-			auto v2 = index.lower_bound(make_pair(a[n], n));;
+			auto v2 = index.lower_bound(make_pair(a[n], n));
 			index.erase(v2);
 			index.emplace(a[n], idx);
 		}
