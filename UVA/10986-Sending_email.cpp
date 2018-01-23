@@ -5,7 +5,7 @@ using edge = pair<int,int>;
 
 ll dijkstra(vector<vector<edge>> const& graph, int s, int t) {
   using state = pair<ll,int>; // <time, node>
-  using pqueue = priority_queue<state, vector<state>, greater<state>>;
+  using pqueue = priority_queue<state, vector<state>, greater<state>>; // shortest time first (higher priority)
   
   pqueue pq;
   vector<ll> shortest_time(graph.size(), -1); // -1 means not visited
