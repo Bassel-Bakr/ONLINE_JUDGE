@@ -1,13 +1,13 @@
 #include <bits/stdc++.h>
 
 using namespace std;
-using pii = pair < int, int >;
+using pii = pair <int,int>;
 
 struct sq
 {
 	int n, m;
-	vector < int >a, b, c;
-	set < pii, greater < pii >> index;
+	vector<int> a, b, c;
+	set<pii, greater<pii>> index;
 
 	sq()
 	{
